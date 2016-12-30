@@ -45,3 +45,14 @@ buildTreeChart = (tags) ->
     |> reverse
     |> take 10
     |> map (-> {name: it[0], size: it[1]})
+
+    
+
+buildTreeChart=(tags)-> tags do
+    |> group-by (-> it)
+    |> obj-to-pairs
+    |> map (-> [it[0], it[1].length])
+    |> sort-by (.1)
+    |> reverse
+    |> take 10
+    |> map (-> {name: it[0], size: it[1]})    
