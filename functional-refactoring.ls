@@ -33,8 +33,8 @@ buildTreeChart = (tags) ->
     tree-chart.push {name: tag[0], size: tag[1]}
 
 
-However when I showed this code to Viktor, he was quick to point out that LiveScript can do better. 
-After another couple of minutes he produced this:
+# However when I showed this code to Viktor, he was quick to point out that LiveScript can do better. 
+# After another couple of minutes he produced this:
 
 buildTreeChart = (tags) ->
   tags
